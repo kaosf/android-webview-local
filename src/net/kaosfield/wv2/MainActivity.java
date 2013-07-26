@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
         wv.loadUrl("file:///android_asset/index.html");
     }
     
-    // �o�b�N�L�[�������ꂽ���A�v�����I�����Ȃ�
+    // バックキーが押されたもアプリを終了しない
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
@@ -45,8 +45,8 @@ public class MainActivity extends Activity {
 
 	public void onTwoClick(View view) {	//added by eGtry
 	    new AlertDialog.Builder(this)
-	            .setTitle("�I��(Quit)")
-	            .setMessage("�I�����܂����H(Quit?)")
+	            .setTitle(("終了(Quit)")
+	            .setMessage("終了しますか？(Quit?)")
 	            .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 	                @Override
 					public void onClick(DialogInterface dialog, int id) {
