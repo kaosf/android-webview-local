@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
         wv.loadUrl("file:///android_asset/index.html");
     }
     
-    // バックキーが押されたもアプリを終了しない
+    // バックキーが押されてもアプリを終了しない
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
